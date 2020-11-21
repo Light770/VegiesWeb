@@ -6,8 +6,7 @@ class Header extends Component {
         return(
             <div className="container">
                 <Navbar className="navbar-light bg-light fixed-top">
-                    <NavbarBrand>Vegies</NavbarBrand>
-                    <NavbarBrand><img src="public/assets/images/logo.png" alt="" height="30"/></NavbarBrand>
+                    <NavbarBrand><img src="assets/images/logo.png" alt="" height="100"/></NavbarBrand>
                 </Navbar>
             </div>
         );

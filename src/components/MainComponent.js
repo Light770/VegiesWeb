@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
-import Products from './ProductComponent';
-import Header from './HeaderComponent';
-import Jumbo from './JumboComponent';
-import Image from 'reactstrap';
 import { PRODUCTS } from '../shared/products';
+import ProductGrid from './ProductComponent';
+
+/*
+          <Header />
+          <HeadImage />
+          */
 
 class Main extends Component {
 
@@ -17,9 +19,7 @@ class Main extends Component {
   render() {
     return (
       <div>
-          <Header />
-          <Jumbo />
-          <Products products={this.state.products}/>
+          <ProductGrid products={this.state.products}/>
       </div>
     );
   }
