@@ -4,7 +4,10 @@ import React from 'react';
 function RenderProductItem ({product}) {
     return (
         <div className="product-card">
-            <h3>{product.name}</h3>
+            <div className="product-top">
+                <h3>{product.name}</h3>
+                <button className="wishlist"><span className="fa fa-heart fa-2x"></span></button>
+            </div>
             <div className="product-image">
                 <img src={product.image} alt={product.name}/>
             </div>
@@ -12,7 +15,7 @@ function RenderProductItem ({product}) {
                 <h3>{product.country}</h3>
                 <div className="product-info-tab">
                     <div className="product-info-button">
-                        <button>Test</button>
+                        <button><span className="fa fa-shopping-cart fa-2x"></span></button>
                     </div>
                     <div className="product-info-text">
                         <h6>{product.price} €</h6>

@@ -65,7 +65,7 @@ export const PRODUCTS =
         },
         {
         id: 7,
-        name:'Chou vert liss',
+        name:'Chou vert lisse',
         image: 'assets/images/produces/shutterstock_5717800780076.png',
         category: 'legume',
         price:'2,99',

@@ -1,11 +1,8 @@
 import React, { Component } from 'react';
 import { PRODUCTS } from '../shared/products';
 import ProductGrid from './ProductComponent';
-
-/*
-          <Header />
-          <HeadImage />
-          */
+import HeadImage from './HeadImageComponent';
+import Header from './HeaderComponent';
 
 class Main extends Component {
 
@@ -19,6 +16,8 @@ class Main extends Component {
   render() {
     return (
       <div>
+          <Header />
+          <HeadImage />
           <ProductGrid products={this.state.products}/>
       </div>
     );
